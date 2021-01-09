@@ -45,4 +45,39 @@ Setting a Profile.ps1
 - Run `.$Profile` on PowerShell to reload the profile into the current session
 
 
+Install oh-my-posh
+
+- Run `Install-Module -Name oh-my-posh -RequiredVersion 2.0.492	`
+
+- Run `notepad $Profile`  add this configuration and save:
+
+```
+#oh-my-posh Setup
+if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+
+#oh-my-posh Import
+Import-Module oh-my-posh
+
+#oh-my-posh Theme 
+Set-Theme Zash
+
+```
+
+- Run `.$Profile` on PowerShell to reload the profile into the current session
+
+Uses Meslo LG M Regular for Powerline Nerd Font
+
+- Click here [Download Meslo Link](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip)
+
+- Unzip and search `Meslo LG M Regular Nerd Font Complete Windows Compatible.ttf` to install 
+
+- Open PowerShell and with right click at toolball choose Properties and select Fonts just like that:
+
+    ![PowershellConfigs][img-powershellconfigs]
+
+
+    🎉 Just Enjoy It! 🥰
+
+
 [img-mypowershell]: img/mypowershell.png
+[img-powershellconfigs]: img/powershellconfigs.png
