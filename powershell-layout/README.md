@@ -1,7 +1,6 @@
 # powershell-layout
 
 
-
 ## About
 
 This folder has been created to setting a powershell terminal
@@ -11,6 +10,8 @@ with colors like this:
 
 
 ## Prerequisites
+
+- Install [posh-git](https://github.com/dahlbyk/posh-git) module
 - Download and Install [ColorTool](https://github.com/microsoft/terminal/releases/tag/1904.29002)
 - Setting a [Profile.ps1](https://ss64.com/ps/syntax-profile.html)
 - Install [Dracula Theme from powershell](https://github.com/dracula/powershell/blob/master/INSTALL.md)
@@ -19,11 +20,29 @@ with colors like this:
 
 ## Installation
 
-Setting a Profile.ps1 with [3 first steps](https://ss64.com/ps/syntax-profile.html)
+Install posh-git module:
 
-![steps][img-steps]
+- run `Install-Module -Name posh-git -AllowPrerelease -Force`
 
-Copy and paste [Microsoft.Powershel_profile.ps1](https://github.com/IcaroNascimento/setops/blob/main/powershell-layout/Microsoft.PowerShell_profile.ps1) to your Profile.ps1 on powershell
+
+
+Download and Install ColorTool 
+
+- Click on [Download ColorTool Link](https://raw.githubusercontent.com/waf/dracula-cmd/master/dist/ColorTool.zip)
+
+- Open PowerShell, navigate to the unzipped ColorTool directory, and run install.cmd.
+
+
+
+Setting a Profile.ps1
+
+- Open PowerShell 
+
+- Run `notepad $Profile`
+
+- Put inside Profile.ps1 this configuration [dracula_prompt-configutarions.ps1](https://github.com/dracula/powershell/blob/master/theme/dracula-prompt-configuration.ps1) and save
+
+- Run `.$Profile` on PowerShell to reload the profile into the current session
+
 
 [img-mypowershell]: img/mypowershell.png
-[img-steps]: img/steps.png 
