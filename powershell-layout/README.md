@@ -22,7 +22,7 @@ with colors like this:
 
 Install posh-git module:
 
-- run `Install-Module -Name posh-git -AllowPrerelease -Force`
+- run `Set-ExecutionPolicy RemoteSigned -scope CurrentUser`   and after `Install-Module posh-git -Scope CurrentUser`
 
 
 
