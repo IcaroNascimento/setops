@@ -47,7 +47,7 @@ Setting a Profile.ps1
 
 Install oh-my-posh
 
-- Run `Install-Module -Name oh-my-posh -RequiredVersion 2.0.492	`
+- Run `Install-Module -Name oh-my-posh -RequiredVersion 2.0.492 -Scope CurrentUser`
 
 - Run `notepad $Profile`  add this configuration and save:
 
